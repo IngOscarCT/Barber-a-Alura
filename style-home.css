@@ -1,0 +1,51 @@
+/*Una buena paractica de programación es mantener la estrcutura del index.html en el archivo Style.css*/
+/*En este archivo, los elementos declarados se llaman selectores*/
+
+.titulo-principal{/*Se crea el selctor de clase para que las propiedades del titulo princial sean reutilizables*/
+    padding-left: 30px; /*Propieda de espaciado interno hacia la izquierda*/
+}
+
+#banner{ /*Selector para el Id de la imagen indexada a la apariencia de la web*/
+    width: 100%; /*Propiedad para cambiar el ancho de un elemento o etiqueta*/
+}
+
+.descripcion{ /*Selector para dar color al primer bloque del codigo de la pagina*/
+    background-color: #ccc;
+    padding: 20px; /*Espaciamiento interno para el bloque en px*/
+}
+
+.titulo-centralizado{ /*Selector para el primer titulo del html*/
+    text-align: center;
+}
+
+.parrafos-descriptivos{ /*se contruye un bloque de propiedades de estilo para le etique p*/
+    text-align: center;/*la propiedad text-aling: ""; permite aliniear las etiquetas en un sentido en especifico*/
+}
+
+#mision{ /*Se crea un selector de Id, para afectar una propiedad en especifico de una unica etiqueta, declarado con #*/
+    font-size: 20px;
+}
+
+em strong{
+    color: crimson;
+}
+
+.diferenciales{ /*Selectores para las clases se declaran con el . previo al nombre*/
+    background-color: floralwhite; /*otro modo para el color sería #FFFFFF*/
+    padding: 30px;
+}
+
+ul{
+    display: inline-block;/*Con esta propiedad se le indica a la lista que solo ocupe el espacio de su contenido*/
+    vertical-align: top;/*Con esta propiedad se alinea la lista con el borde superior del bloque*/
+    width: 20%;
+    margin-right: 10%;/*Propiedad para definir margen derecha de una etiqueta en información referencial (%) o absoluta (px)*/
+} /*Con este selector se busa reubicar la imagen al lado de la lista creada*/
+
+.items{ /*Las clases en CSS se referencian con un '.' antes del nombre de la clase*/
+    font-style: italic; /*Propiedad italic modifica el tipo de letra, de la clase items raferenciada de html*/
+}
+
+.imagenDiferenciales{
+    width: 50%;
+}

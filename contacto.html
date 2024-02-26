@@ -1,0 +1,101 @@
+<!DOCTYPE html><!--Declaraicón tipo de HTML-->
+
+<html><!--Etiqueta principal de toda pagina-->
+    <head><!--Etiqueta para organizar la info de la pagina-->
+        <meta charset="UTF-8"><!--Diccionario con el que se va a trabajar-->
+        <meta name="viewport" content="width=device-width"><!--Este comando permite que la apgina web se adapte a las pantallas de otros dispositivos cuando sea visita desde otro dispositivo-->
+
+        <title>Contacto - Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css"><!--Se ubica el reset.css acá para borrar los formatos previos y dejar solo el propio-->
+        <link rel="stylesheet" href="style.css"><!--Referencia al archivo CSS con los estilos-->
+    </head>
+    <body><!--Etiqueta para el cuerpo de la pagina-->
+        <header><!--Etiqueta para el encabezado de la pagina-->
+            <div class="caja"><!--Se establese una clase para aplicar estilos solo al este div en especifico-->
+                <h1><img src="imagenes/logo.png" alt="Logo Barbería Alura"></h1><!--Se utiliza la etiqueta h1 para darle relevancia a la imagen del logo-->
+                <nav><!--Etiqueta para el panel de navegación en la pagina web-->
+                    <ul><!--Etiqueta para la lista ordenada-->
+                        <li><a href="index.html">Home</a></li><!--Etiqueta para los items de la lista-->
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li><!--La etiqua <a> permite crear enlaces a otras paginas-->
+                    </ul>
+                </nav>
+            </div>
+                        
+        </header>
+        
+        <main>
+            <form><!--Etiqueta para los formularios-->
+                <label for="nombreapellido">Nombre y Apellidos</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+                <!--Se usa el for para asociar el label, al input con su respectivo ID, Etiqueta para la caja para la entrada de datos del usuario, se añade ID para referenciar el Input con el label y el comando required hace boligatorio el diligenciamiento de dicho campo-->
+
+                <label for="e-mail">Correo Electrónico</label>
+                <input type="email" id="e-mail" class="input-padron" required placeholder="email@dominio.com">
+                <!--Porpiedad placeholder permite dar una información guia al usuario del dato requerido-->
+
+                <label for="telefono">Numero Telefónico</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(+XX) XXX XXXXXXX">
+
+                <label for="mensaje">Mensaje/Descripción:</label>
+                <textarea cols="67" rows="9" id="mensaje" class="input-padron" required></textarea>
+                <!--Texarea es una etiqeuta para uan caja de texto de tamaño manipulable, etiqueta cols y rows dan numero de columnsa y filas respectivamente para el espacio q ocupa la caja de texto, id para vincular con el label y value para darle información mostrable sobre lo que se requiere al usuario-->
+
+                <fieldset><!--Etiqueta para agrupar elementos que hacen referencia a los mismos eventos-->
+                    <legend>¿Cómo le gustaría ser contactado por nosotros?</legend>
+                    <!--legend es una etiqueta para crear un titulo para un grupo de elementos dentro de un formularios y/o etiqueta fieldset-->
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    <!--Etiqueta para el check circular, etiqueta name para agrupar en un mismo grupo de input a los radios y evitar que se puedan seleccionar mpas de 1 a la vez-->
+
+                    <label for="radio-celular"><input type="radio" name="contacto" value="Celular" id="radio-celular">Celular</label>
+
+                    <label for="radio-chat"><input type="radio" name="contacto" value="WathsApp" id="radio-chat" checked>WathsApp</label> <!--Propiedad checked permite dejar como predeterminada esta opción fija-->
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿En cual horario preferirias ser atendido?</legend>
+                    <select><!--Etiqueta para generar una lista deplegable-->
+                        <option>Mañana</option><!--etiqeuta paara cada opción de la lista-->
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>¿Qué le parece recibir novedades sobre la Barbería Alura? Marque Confirmación</label><!--Otra forma de relacionar input con label-->
+                
+                <input type="submit" value="Enviar Formulario" class="enviar"><!--Etiqueta submit para añadir el boton evíar al fianl del formulario, reconoce el idioma del formulario automaticamente-->
+            </form>
+            <!--Construcción de tablas dentro de HTML-->
+            <table><!--Etiqueta de html para las tablas-->
+                <thead><!--Encabezado de la tabla-->
+                    <tr><!--Etiqueta para las filas de las tablas-->
+                        <th>Día</th><!--Etiqueta para las celdas del encabezado de la tabla-->
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+
+                <tbody><!--Etiqueta para el cuerpo de la tabla-->
+                    <tr><!--Etiqueta para las filas de las tablas-->
+                        <td>Lunes</td><!--Etiqueta para las celdas de las filas de las tablas-->
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    <tr><!--Etiqueta para las filas de las tablas-->
+                        <td>Miercoles</td><!--Etiqueta para las celdas de las filas de las tablas-->
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    <tr><!--Etiqueta para las filas de las tablas-->
+                        <td>Viernes</td><!--Etiqueta para las celdas de las filas de las tablas-->
+                        <td>08h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer><!--Etiqueta para el pide de pagina de la web-->
+            <img src="imagenes/logo-blanco.png" alt="Logo Barbería Alura">
+            <!--El alt=" " permite añadir un texto alternativo para las imagenes-->
+            <p class="copyright">&copy Copyright Barbería Alura - 2024</p><!--el '&copy' es el codigo Unicode para el simbolo de copyright-->
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,286 @@
+/*Estilo visual para la pagina de procutos...*/
+
+body{/*Se aplica el estilo importado de google al body completo*/
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+header {/*Selector para el estilo de la etiqueta de encabezado*/
+    background-color: #bbb;/*Propiedad para el color del fondo*/
+    padding: 20px 0;
+}
+
+.caja {
+    width: 940px;/*Un espaciamiento general*/
+    position: relative;/*Posición con respecto a otra etiqueta o elemento*/
+    margin: 0 auto;/*Maargen con 0 para superior e inferior y bordes auto ajustables*/
+}
+
+nav {
+    position: absolute;/*Propiedad para cambiar la posición absoluta de una etiqueta con respecto a valores especificos*/
+    top: 110px;/*Valor para la ubicación hacia arriba de la etiqueta*/
+    right: 0;/*Valor para la ubicacion hacia la derecha de la etiqueta*/
+}
+
+nav li {/*Se organiza el selectro para que afecte a la etiqueta madre nav y exclsivamente a la etique hija li*/
+    display: inline;/*Porpiedad para indicar que la etiqueta ocupe el tamaño de su contenido*/
+    margin: 0 0 0 19px;/*Porpiedad para generar espaciamentos hacia arriba, derecha, abajo e izquierda respectivamente*/
+}
+
+nav a {/*Selector para afectar la etiqueta de los enlaces a otras paginas*/
+    text-transform: uppercase;/*Propiedad para colocar en mayúsculas el texto*/
+    color: black;/*Propiedad para el color del texto*/
+    font-weight: bold;/*Propiedad para colocar estilo en negrilla*/
+    font-size: 28px;/*propiedad para el tamaño del texto*/
+    text-decoration: none;/*Propiedad para quitar el subrayado por defecto de la pagina web*/
+}
+/*Selector que permite colocar el efecto visual al pasar el mouse por algun elemento de la pagina*/
+nav a:hover { /*Hover permite capturar el comportamiento movimiento del mouse del usuario en la pagina*/
+    color: #c78c19;
+    text-decoration: underline;/*Propiedad para el subrayado*/
+}
+
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li {/*Selector para afectar el estilo de los items de la listas en el main*/
+    display: inline-block;/*Esta propiedad permite colocar los items de la lista uno al lado del otro en formato horizontal y editar sus valores internos para el formato que se desee en vertical*/
+    text-align: center;/*propiedad para alinear texto con el centro de la pagina*/
+    width: 30%;/*Se le atribuye ocupación del 30% del espacio aca elemento de los item de la lista*/
+    vertical-align: top;/*Alineación vertical con la parte superior*/
+    margin: 0 1.5%;/*Es espaciamiento Externdo del elemento*/
+    padding: 30px 20px;/*Es espaciamiento Interno del elemento*/
+    box-sizing: border-box;/*Propiedad que limita el borde de cada uno de los elementos*/
+    border: 2px solid black;/*Propiedad border permite trabajar con diferentes caracteristicas del elemento borde como:*/
+    /*Propiedad par el grozor que tendrá el borde del elemento, Estilo del brode, establecido como una linea solida Propiedad que afecta el color del borde del elemento*/
+    border-radius: 25px;/*Propiedad que permite configurar los vordes curbos del elemento, con los parametros del borde superior izquiero y recorre sentido de las manecillas del reloj*/
+}
+
+.productos li:hover {
+    border-color: #c78c19;
+}
+
+.productos li:active { /*Active permite capturar el comportamiento del click del mouse*/
+    border-color: green;
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2 { /*Selector permite afectar a h2 al capturar el movimiento del mouse*/
+    font-size: 34px;
+}
+
+.descripcion-P {
+    font-size: 20px;
+}
+
+.precio-P {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+footer { /*Selector para modificar el estilo del pie de pagina*/
+    text-align: center;
+    background-image: url(imagenes/bg.jpg);/*Propiedad url permite utilizar una imagen en CSS como fondo*/
+    padding: 35px;
+}
+
+.copyright {
+    color: aliceblue;
+    font-size: 13px;
+    margin: 25px;
+}
+
+/*Etilo Visual para la apagina de Contacto...*/
+
+form {
+    margin: 40px 0;/*El primer valor es orientación vertical el seúndo es horizontal*/
+}
+
+form label, form legend { /*Una "," permite construir un selector para varias etiquetas*/
+    display: block;/*Propiedad para ocupar todo el espacio en bloque*/
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 45%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 8px;
+    transition: 0.85s all;/*transition permite colocar un tiempo de transición a los cambios*/
+    cursor: pointer;/*Cambia la forma del cuersos a un puntero (manito con dedo apuntando)*/
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);/*Propiedad qeu permite cambiar la escala completa del elemento según un evento*/
+}
+
+table{
+    margin: 42px 42px;
+}
+
+thead{
+    background: darkslategray;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 9px 16px;
+}
+
+/*CSS para configurar el visual de la pagina home*/
+.banner{
+    width: 100%;
+}
+
+.principal{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;/*Ancho de todo e contenido central de la pagina*/
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;/*El 2em idica que la fuente será 2 veces el tamaño padron (por defecto) del navegador*/
+    margin: 0 0 1em;
+    clear: left;/*Propiedad que limpia los formatos que afecten al elemento despues de su declaración*/
+}
+
+.titulo-principal:first-letter{/*Pseudo elemento que permite modificar la primera letra del titulo*/
+    font-weight: bold;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;/*Propiedad para volver flotante un elemento y dejar una sombra o espacio en el lugar*/
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#fefefe 35%,#888);/*linear-gradient() permite generar transiciones degradados de colores*/
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;/*Ancho de todo e contenido central de la pagina*/
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5;/*Propiedad para aumentar en 1.5 el tamaño padron (predeterminad del navegador)*/
+}
+
+.items:before{/*Pseudo elemento que permite agregar algo antes del elemento llamado por la clase*/
+    content:"✮";
+}
+
+.items:first-child{/*Pseudo-clase, para el primer hijo, o primer elemento del bloque de elementos*/
+    font-weight: bold;
+}/*nth-child() permite escoger el elemento o los elementos especificos de la lista que se quieren afectar*/
+
+.imagen-diferenciales{
+    width: 60%;
+    transition: 531ms;
+    box-shadow: 10px 10px 25px 15px #000;/*Propuiedad para colocar sombra a un elemento, posee, varios parametros, 1° Para ubicación en eje horizontal, 2° para eje vertical, 3° para degragado de la sombra, 4° para expansion de la sombra, y el ultimo parametro es el clor de la sombra*/
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.531;/*Porpiedad que permite modificar la cantidad de luz que deja pasar un elemento, para el ejemplo 40%*/
+}
+
+.video {
+    width: 560px;
+    margin: 1em auto;
+}
+
+@media screen and (max-width:480px){ /*Se le indica que si encuentra una pantalla con hasta 480px haga algo*/
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    nav a{
+        font-size: 100%;
+    }
+    .productos li{
+        display: block;
+        margin: 1.5% 1.5%;
+        width: 100%;
+    }
+    form{
+        margin: 40px 12px;
+    }
+    .input-padron {
+        width: 68%;
+    }
+    .caja, .productos, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+}
